@@ -1,6 +1,6 @@
 DinoRails::Application.routes.draw do
-  match '/on' => 'led#on'
-  match '/off' => 'led#off'
+  match '/right' => 'led#right'
+  match '/left' => 'led#left'
 
   root to: 'led#index'
 end

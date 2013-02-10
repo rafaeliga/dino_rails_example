@@ -1,14 +1,14 @@
 class LedController < ApplicationController
-  before_filter :set_up_led, only: [:on, :off]
+  before_filter :set_up_led, only: [:right, :left]
 
   def index
   end
 
-  def on
+  def right
     @led.on
   end
 
-  def off
+  def left
     @led.off
   end
 
