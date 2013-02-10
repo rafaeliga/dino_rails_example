@@ -55,3 +55,17 @@ class Game
   end
   
 end
+
+require 'curses'
+include Curses
+require 'dino'
+
+loop do
+  case getch
+    when ?q     then break
+    when ?b     then puts "bbbbbbbbb"
+  end
+
+  game = Game.new
+  game.start
+end

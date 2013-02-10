@@ -12,4 +12,6 @@ $(function() {
           $.get('/left');
       }
   }
+
+  $.get('/start');
 })
